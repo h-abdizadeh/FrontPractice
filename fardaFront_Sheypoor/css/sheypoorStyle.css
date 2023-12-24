@@ -34,10 +34,14 @@ header{
     z-index: 1400;
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
 }
-header img{
+header .main-logo{
     width: 110px;
     position: relative;
     top: 5px;
+}
+header .mobile-logo{
+    width: 36px;
+    display: none;
 }
 
 header .search{
@@ -87,7 +91,7 @@ header .menu a:hover{
 
 header .btn-submit{
     background-color: var(--mainBlue);
-    color: var(--mainWhite);
+    color: var(--mainWhite) !important;
     display: inline-block;
     padding: 8px 15px;
     border-radius: 90px;
@@ -203,8 +207,15 @@ footer .social a{
 }
 
 @media screen and (max-width: 640px ) {
-    body{
-        width: 100%;
+    body{width: 100%;}
+    header .main-logo{display: none;}
+    header .mobile-logo{
+        display: inline-block;
+        position: absolute;
+        top:21px;
+        right: 32px;
+        border-radius: 45px;
+        z-index: 1;
     }
     header .search{
         padding: 2px;
@@ -213,5 +224,56 @@ footer .social a{
     header .search input{
         margin: auto;
         width: 90%;
+        padding-right: 60px;
+    }
+    header .menu{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 1400;
+        border-top: 1px solid var(--mainBlue);
+        padding: 5px 0;
+    }
+    header .btn-submit .title{
+        display: none;
+    }
+
+    /* group mobile style */
+    .groups{
+        padding-bottom: 0;
+    }
+    .groups .bg-group{
+        width: 70px;
+    }
+    .groups .bg-group div{
+        width: 32px;
+    }
+    .groups .bg-group span{
+        font-size: 8pt;
+    }
+
+
+    /* main grid */
+    .grid{
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* footer */
+    footer{
+        padding-bottom: 60px;
+    }
+    footer h4{
+        width: 64%;
+        font-size: 8pt;
+    }
+    footer .social{
+        width:30%;
+        padding-bottom: 30px;
+    }
+    footer .social a{
+        font-size: 8pt;
     }
 }

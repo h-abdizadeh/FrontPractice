@@ -236,13 +236,27 @@ footer .social a{
         border-top: 1px solid var(--mainBlue);
         padding: 5px 0;
     }
+    header .btn-submit{
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        padding: 0;
+    }
     header .btn-submit .title{
         display: none;
     }
 
     /* group mobile style */
+    /* groups horizontal scroll  */
+    .horizental-groups{
+        height: 200px;
+        overflow-y:hidden;
+        overflow-x: scroll;
+    }
     .groups{
         padding-bottom: 0;
+        /* width: 1400px; */
+        display: inline-flex;
     }
     .groups .bg-group{
         width: 70px;
@@ -276,4 +290,7 @@ footer .social a{
     footer .social a{
         font-size: 8pt;
     }
+
+    
+
 }

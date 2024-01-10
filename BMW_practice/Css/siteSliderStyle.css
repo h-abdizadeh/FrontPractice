@@ -1,0 +1,100 @@
+body{
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.slider{
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    position: relative;
+}
+
+.shape-right{
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
+    width: 50%;
+    position: absolute;
+    left: 60%;
+
+    transition: 0.5s;
+}
+
+.shape-center{
+    clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
+    overflow: hidden;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+
+    transition: 0.5s;
+}
+
+.shape-left{
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    overflow: hidden;
+    width: 50%;
+    position: absolute;
+
+    transition: 0.5s;
+}
+
+.detail{
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 32px;
+    text-justify:left;
+    top: 32px;
+    right: -100%;   
+    color: white;
+    background-color: rgba(30, 30, 30, 0.6);
+}
+.detail button{
+    color: white;
+    border-radius: 3px;
+    background-color: #0653b6;
+    outline: none;
+    border: none;
+    padding: 10px 52px;
+    font-size: 14pt;
+}
+
+.shape-left:hover, .shape-center:hover, .shape-right:hover{
+    background-color: #1e1e1e;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    left: 0;
+    z-index: 9;
+}
+
+.shape-left:hover img{
+    width: 100%;
+}
+.shape-center:hover img{
+    width: 100%;
+}
+.shape-right:hover img{
+    width: 100%;
+}
+
+.shape-left:hover .detail{
+    animation: transform-LtoR 1s forwards; 
+}
+.shape-center:hover .detail{
+    animation: transform-LtoR 1s forwards; 
+}
+.shape-right:hover .detail{
+    animation: transform-LtoR 1s forwards; 
+}
+
+@keyframes transform-LtoR {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 10px;
+    }
+}

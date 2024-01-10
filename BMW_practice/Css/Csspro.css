@@ -1,0 +1,107 @@
+body{
+    background-color: white;
+    margin: auto;
+    direction: rtl;
+    background-image: url('../Images/HTML5_logo.png');
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-x; */
+    background-repeat: no-repeat;
+    /* background-size: contain;*//*orginal size */
+    background-size: 25%;/* orginal size */
+    /* background-size: cover; width 100% */
+    background-position: 50% 100px;
+}
+
+.shape-1{
+    width: 320px;
+    height: 320px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: red;
+
+
+    transition: 0.5s;
+}
+
+.shape-1:hover{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%); 
+    width: 100%;
+}
+
+
+/* animation css */
+.frame{
+    width: 360px;
+    height: 360px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.frame .content{
+    background-color: red;
+    border-radius: 10px;
+    width: 360px;
+    height: 360px;
+    position: relative;
+
+    animation: transform-anim-1 1s normal 1.5s;
+}
+
+.frame .content h1{
+    color: white;
+    text-align: center;
+    height: 360px;
+    line-height: 180px;
+}
+
+.frame:hover .content{
+    animation: transform-anim-2 1s normal forwards;
+}
+
+@keyframes transform-anim-1 {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes transform-anim-2 {
+    from{
+        top: 0;
+    }
+    to{
+        top: -100%;
+        background-color: blue;
+    }
+}
+
+@keyframes anim-3{
+    0%,25%{
+        transform: rotate(15deg);
+    }
+    25%,50%{
+        transform: rotate(-15deg);
+    }
+    50%,75%{
+        transform: rotate(15deg);
+    }
+    75%,100%{
+        transform: rotate(-15deg);
+    }
+}
+
+.btn{
+    outline: none;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    padding: 5px 10px;
+    font-size: 32pt;
+    border-radius: 90px;
+    margin-bottom: 45px;
+}
+
+.btn:focus{
+    animation: anim-3 1.5s normal;
+}

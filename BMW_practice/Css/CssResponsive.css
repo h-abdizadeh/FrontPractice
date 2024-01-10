@@ -1,0 +1,60 @@
+body{
+    margin: auto;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-blue{
+    background-color: blue;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+/* .box{
+    width: 24.7%;
+    display: inline-block;
+    aspect-ratio: 1/1;
+} */
+.box{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+} 
+.box .item{
+    aspect-ratio: 1/1;
+}
+
+.redbox{
+    width: 33%;
+    height: auto;
+    aspect-ratio: 3/4;
+    background-color: red;
+    border-radius: 15px;
+    margin: auto;
+
+    transition: 0.5s;
+}
+
+@media screen and (max-width:1000px) { 
+   .box {
+    grid-template-columns: 1fr 1fr 1fr;
+
+   }
+
+   .box .item-md{
+
+    aspect-ratio: 9/1;
+    width: 100%;
+   }
+}
+
+@media screen and (max-width:512px){
+    .redbox{
+        width: 100%;
+        aspect-ratio: 9/3;
+    }
+}

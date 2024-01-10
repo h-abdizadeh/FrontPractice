@@ -1,0 +1,213 @@
+body{
+    background-color: whitesmoke;
+    margin: auto;
+    direction: rtl;
+    color: black;
+}
+
+h1{
+    background-color: gray;
+    color: black;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.my-h1{
+    background-color: yellow;
+    padding: 10px;
+    color: red;
+    display: block;
+}
+
+/* border radius top right */
+.radius-tr{
+    border-radius: 5px 35px 5px 5px;
+
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; */
+}
+
+/* tag subTag, class subClass */
+.div-box{
+    background-color: green;
+    border-top:10px dashed black;
+    border-right:5px dotted black;
+    border-radius: 5px 15px 5px 5px;
+    padding: 5px;
+    width: 33%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.div-box h3{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    font-size: 21pt;
+}
+
+.div-box a{
+    background-color: gray;
+    color: blue;
+    padding: 10px;
+    border-radius: 45px;
+    text-decoration: none;
+}
+
+.div-box a span{
+    background-color: red;
+    padding: 1px 5px;
+    border-radius: 45px;
+    color: white;
+    font-weight: bold;
+}
+
+ /* practice 1 _ product view  */
+
+.product-box{
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+    margin: auto;
+    width: 20%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+.product-box img{
+    width: 100%;  
+    padding: 5px 0;  
+    border-radius: 10px;
+    background-color: skyblue;
+}
+.product-box h3{
+    padding-right: 10px;
+}
+.product-box a{
+    display: block;  
+    text-align: left;
+    font-size: 18px;
+}
+.product-box a s{
+    font-size: 12pt;
+    color: gray;
+}
+.product-box a span{
+    background-color: red;
+    padding:1px 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 45px;
+    margin-left: 5px;
+}
+
+.div-btn{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.div-btn button{
+    background-color: teal;
+    color: white;
+    padding: 5px 15px 5px 10px;
+    border-radius: 5px 0 15px 10px;
+    border: none;
+}
+
+
+
+/* بخش دوم */
+.gradient-div-linear{
+    width: 100%;
+    height: 128px;
+    background-image: linear-gradient(90deg,#D61355,#F94A29,#FCE22A,#30E3DF);
+}
+.gradient-div-radial{
+    width: 512px;
+    height: 512px;
+    margin: auto;
+    background-image:radial-gradient(#F94A29,#F94A29,#FCE22A,#30E3DF)
+}
+
+
+.div-position{
+    width: 100%;
+    height: 320px;
+    background-color: #30E3DF;
+        /* position: relative; */
+}
+.div-absolute{
+    width: 100px;
+    height: 100px;
+    border-radius: 180px;
+    background-color: #D61355;
+    position: absolute;
+    top:-50px;
+    right: 15px;
+    z-index: 1;
+}
+
+.div-relative{
+    width: 100px;
+    height: 100px;
+    border-radius: 180px;
+    background-color: #F94A29;
+    position: relative;
+    top: -50px;
+    right: 15px;
+}
+
+.div-fixed{
+    width: 100%;
+    position: fixed;
+    background-color: #F94A29;
+    top: 0;
+    text-align: center;
+}
+.div-fixed a{
+    display: inline-block;
+    background-color:#FCE22A;
+    color: #D61355;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 2px;
+
+    text-align: center;
+    height: 64px;
+    cursor: pointer;
+
+    line-height: 64px;
+    transition: 0.7s;
+
+}
+
+.div-fixed a:hover{
+    background-color: white;
+    border-radius: 90px;
+    transform: rotate(25deg) scale(1.5) translateX(15px) translateY(15px);
+}
+
+.div-img{
+    width: 360px;
+    height: 360px;
+    border-radius: 180px;
+    background-color: #F94A29;
+
+    overflow: hidden;
+}
+
+.div-img img{
+   position: relative;
+   right: -50%;
+   filter: blur(10px);
+
+   transition: 0.7s;
+}
+
+.div-img img:hover{
+    filter: none;
+    transform: rotate(360deg) scale(0.9);
+    top: -10%;
+}

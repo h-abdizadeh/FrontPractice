@@ -1,0 +1,133 @@
+body{
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 5px auto auto 5px;
+    animation: anim-2 2s infinite 1s;
+  /* animation: name time effect delay; */
+}
+
+.plasma{
+    background-color: orange;
+    border-radius: 25px 90px 90px 90px;
+    padding: 5px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    margin: 5px;
+    animation: anim-plasma-a 3s infinite;
+    transition: 0.5s;
+}
+.plasma .middle{
+    width: 160px;
+    height: 160px;
+    background-color: blue;
+    border-radius:90px 25px 90px 90px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    animation: anim-plasma-b 3s infinite;
+    transition: 0.5s;
+}
+.plasma .inner{
+    width: 140px;
+    height: 140px;
+    background-color: green;
+    border-radius:25px 90px 90px 90px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    animation: anim-plasma-a 3s infinite;
+    transition: 0.5s;
+}
+.plasma h1{
+    margin-top: 64px;
+    color: white;
+}
+
+.line{
+    display: block;
+    background-color: green;
+    padding: 10px 5px;
+    text-align: center;
+    animation: anim-line-ball 1s infinite;
+    transition: 0.5s;
+
+}
+.line .ball{
+    display: inline-block;
+    aspect-ratio: 1/1;
+    padding: 15px;
+    background-color: white;
+    border-radius: 90px;
+}
+
+@keyframes anim-1{
+    from{
+        transform: translateX(0) rotate(0deg);
+    }
+    to{
+        transform: translateX(calc(100vw - 200px)) rotate(360deg);
+        border-radius: 180px;
+        background-color: blue ;
+    }
+}
+
+@keyframes anim-2 {
+    0%{
+        background-color: red;
+    }
+    33%{
+        background-color: blue;
+    }
+    66%{
+        background-color: yellow;
+    }
+    99%{
+        background-color: green;
+    }
+}
+
+@keyframes anim-plasma-a {
+    0%{
+        border-radius: 25px 90px 90px 90px;
+    }
+    25%{
+        border-radius: 90px 90px 25px 90px;
+    }
+    50%{
+        border-radius: 90px 25px 90px 90px;
+    }
+    75%{
+        border-radius: 90px 90px 90px 25px;
+    }
+}
+@keyframes anim-plasma-b {
+    0%{
+        border-radius: 90px 25px 90px 90px;
+    }
+    25%{
+        border-radius: 90px 90px 90px 25px;
+    }
+    50%{
+        border-radius: 25px 90px 90px 90px;
+    }
+    75%{
+        border-radius: 90px 90px 25px 90px;
+    }
+}
+
+@keyframes anim-line-ball {
+    from{
+        text-align: left;
+    }
+    to{
+        text-align: right;
+    }
+}

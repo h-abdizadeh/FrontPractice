@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final - frontend project</title>
+
+    <link href="bootstrap-5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/finalStyle.css" rel="stylesheet">
+    <link href="bootstrap-icons-1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-black">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <!-- title -->
+            <a class="navbar-brand" href="#">فروشگاه آنلاین</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <!-- menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- 1 -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <span class="bi bi-house text-info"></span> صفحه نخست</a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="bi bi-cart text-info"></span> محصولات</a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="bi bi-view-stacked text-info"></span> گروه ها
+                        </a>
+                        <ul class="dropdown-menu pb-0 overflow-hidden">
+                            <li><a class="dropdown-item" href="#">گروه یک</a></li>
+                            <li><a class="dropdown-item" href="#">گروه دو</a></li>
+                            <li>
+                                <hr class="dropdown-divider mb-0">
+                            </li>
+                            <li><a class="dropdown-item bg-info text-white pb-2" href="#">سایر گروه ها</a></li>
+                        </ul>
+                    </li>
+                    <!-- 4 -->
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <span class="bi bi-telephone text-info"></span> تماس با ما</a>
+                    </li>
+                </ul>
+
+                <!-- search box -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-1 rounded-5 border-info border-1" type="search" placeholder="جستجو..."
+                        aria-label="Search">
+                    <button class="btn btn-info rounded-5" type="submit">
+                        <span class="bi bi-search text-white"></span></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</body>
+<script src="bootstrap-5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

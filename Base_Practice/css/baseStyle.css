@@ -1,0 +1,218 @@
+body{
+    background-color: black;
+    /* background-color: white; */
+    color: yellow;
+    height: 1400px;
+}
+
+h1{
+    font-size: 64pt;
+    text-align: center;
+    background-image: 
+    linear-gradient(90deg,red,blue,green,navy,purple);
+    padding: 25px 0;
+    border-radius: 15px 5px;
+}
+
+.h-title{
+    background-image: none;
+    border: 3px solid yellow;
+    padding: 15px 0;
+    border-radius: 10px;
+    color: yellow;
+}
+
+#h-text{
+    border-radius: 90px;
+    border: 5px dashed red;
+    color: orange;
+    padding: 10px;
+    /* display: inline; */
+    display: inline-block;
+    /* margin: 3px; */
+    margin-left: 5px;
+}
+
+.bg-red{
+    border: 1px solid red !important;
+    background-color: red;
+    color: yellow;
+    transition: 0.5s;
+}
+.bg-red:hover{
+    border-radius: 15px 90px 90px 15px;
+    border-bottom-color: white !important;
+    border-bottom-width: 15px !important;
+    cursor: pointer;
+}
+
+.bg-green{
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+.bg-green:hover{
+    background-color: white;
+    color: green;
+    cursor: pointer;
+}
+.bg-yellow{
+    background-color: yellow;
+    color: navy;
+    transition: 0.5s;
+}
+.bg-yellow:hover{
+    cursor: pointer;
+    /* transform: scale(0.5); */
+    /* transform: scale(1.25) rotate(45deg); */
+     transform: rotate(45deg);
+    /* transform: translateX(16px); */
+    /* transform:  rotateY(45deg); */
+}
+.btn-base{
+    border-radius: 45px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+.search{
+    display: inline-block;
+    position: relative;
+}
+.search input{
+    width: 180px;
+    padding: 10px 5px;
+    border-radius: 45px;
+    opacity: 0.75; /* 0.0 -> 1.0 */
+    transition: 0.5s;
+}
+.search input:focus{
+    opacity: 1;
+    outline: 0;
+    padding-left: 45px;
+}
+.search button{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: navy;
+    border-radius:10px 45px 45px 10px;
+    color:white;
+    padding: 8px 8px;
+    border: 0;
+    transition: 0.5s;
+}
+/* .search input:focus ~ button{
+    border-radius: 45px;
+} */
+/* .search input:focus ~ button
+{
+    border-radius: 45px;
+    left:4px;
+    right:auto;
+} */
+.search input:focus ~ button
+{
+    background-color:transparent;
+    color: navy;
+    left:4px;
+    right:auto;
+}
+
+.top-menu{
+    position: fixed;
+    background-color: whitesmoke;
+    color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+
+}
+
+.top-menu .list a{
+    background-color: white;
+    color: red;
+    border-bottom:2px solid red;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1px;
+    padding: 5px 10px;
+
+    transition: 0.3s;
+}
+.top-menu .list a:hover{
+    background-color: red;
+    color: white;
+    border-color: white;
+}
+.top-menu .list .group{
+    display: inline-block;
+    position: relative;
+}
+.top-menu .list .group button{ 
+    background-color: red;
+    color: white;
+    padding:7px 12px;
+    border-radius: 8px;
+    border:0;
+    border-bottom:2px solid white;
+    margin: 1px;
+    outline: 0;
+}
+.top-menu .list .group-content{
+    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.35); */
+    /* background-image: linear-gradient(45deg,rgba(248, 200, 8, 0.5),rgba(22, 81, 231, 0.5)); */
+    /* padding: 2px; */
+    border-radius: 0 0 5px 5px;
+    position:absolute;
+    width: 180px;
+    height: 0;
+    overflow: hidden;
+    top: 100%;
+
+    transition: 0.5s;
+}
+.top-menu .list .group-content a{
+    display: block;
+}
+.top-menu .list .group button:focus ~ .group-content{
+    height: 128px;
+    padding: 2px;
+}
+
+.h1-text{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-image: none;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    line-height: 500px;
+
+}
+
+/* this class use in main with js */
+.base-class{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    
+    transition: 0.5s;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 180px;
+    line-height: 100px;
+
+    transition: 0.5s;
+}

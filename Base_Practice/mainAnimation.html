@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html - Animation</title>
+
+    <link href="css/animationStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box" onclick="play()">
+    </div>
+
+    <hr>
+
+    <div class="plasma">
+        <div class="middle">
+            <div class="inner">
+                <h1>START</h1>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="line">
+        <div class="ball">
+
+        </div>
+    </div>
+
+    <audio id="my_audio" autoplay>
+        <source src="../../../../../../Downloads/Music/Mohsen Chavoshi - Jahan e Laghar (320).mp3" type="audio/mpeg">
+        <!-- Add additional source elements for other formats (e.g., Ogg, WAV) -->
+    </audio>
+
+    <!-- Vanilla JavaScript -->
+    <script>
+
+        let click = true;
+        function play() {
+            // alert('test')
+            if (click == true) {
+                document.getElementById("my_audio").play();
+                click = false;
+            }
+            else {
+                document.getElementById("my_audio").pause();
+                click = true;
+            }
+        }
+        // window.onload = function() {
+        //   document.getElementById("my_audio").play();
+        // };
+    </script>
+</body>
+
+</html>

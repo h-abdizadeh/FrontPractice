@@ -1,0 +1,77 @@
+body{
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.red-box{
+    width: 33%;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+
+    transition: 0.5s;
+}
+
+.my-btn{
+    display: inline-block;
+    background-color: rgb(51, 51, 239);
+    border-radius: 8px;
+    font-size: 14pt;
+    font-weight: normal;
+    color: white;
+    margin-right: 5px;
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+.my-btn .icon{
+    display:inline-block;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-left: 1px solid white;
+    background-color: rgb(6, 6, 153);
+}
+.my-btn .text{
+    padding:0 10px;
+}
+
+.grid{
+    display: grid;
+    column-gap: 2px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid .item{
+    background-color: black;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 750px) {
+    .red-box{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .red-box{
+        width: 100%;
+    }
+
+    .my-btn .text{
+        display: none;
+    }
+
+    .my-btn .icon{
+        border: none;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .grid .item{
+        margin-top: 2px;
+        aspect-ratio: 2/1;
+    }
+}

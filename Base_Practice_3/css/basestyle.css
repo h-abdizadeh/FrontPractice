@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(0, 255, 234);
+    color: #000036;
+}
+
+a {
+    display: inline-block;
+}
+
+.bg-red {
+    background-color: red;
+    color: white;
+}
+
+.bg-green {
+    background-color: green;
+    color: white;
+}
+
+.bg-orange {
+    background-color: orange;
+    color: white;
+}
+
+.padding-1 {
+    /* padding: top right bottom left */
+    padding: 10px 20px 30px 40px;
+}
+
+.padding-2 {
+    /* padding: (top bottom) (right left) */
+    padding: 10px 40px;
+}
+
+.padding-3 {
+    /* padding: top (right left) bottom */
+    padding: 10px 20px 40px;
+}
+
+.padding-4 {
+    padding-left: 40px;
+}
+
+.radius-1 {
+    border-radius: 10px 30px 60px 90px;
+}
+
+.radius-2 {
+    border-radius: 10px 30px;
+}
+
+.radius-3 {
+    border-top-left-radius: 60px;
+}
+
+.border-1 {
+    border-bottom: 5px solid navy;
+}
+
+.border-2 {
+    border-left: 5px solid navy;
+    border-bottom: 2px dashed navy;
+}
+
+.font-style-1 {
+    font-size: 16pt;
+    /* point */
+}
+
+.font-style-2 {
+    font-size: 16pt;
+    /* point */
+    font-weight: bold;
+}
+
+.font-style-3 {
+    font-size: 16pt;
+    /* point */
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.bg-img-1 {
+    height: 128px;
+    background-image: url('../images/HTML5logo.png');
+    background-size: contain;
+    /* background-size: cover; */
+    /* background-size: 40%; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-img-2 {
+    height: 128px;
+    background-image: linear-gradient(45deg, black, red, yellow, green, orange, purple, white);
+    /* background-image:radial-gradient(black,red,yellow,green,orange,purple,white); */
+}
+
+.position-base-div {
+    height: 128px;
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    left: 5px;
+    /* z-index: 9; */
+}
+
+.pos-relative {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* top: 20px; */
+    top: 50px;
+    left: 20px;
+}
+
+.pos-fixed{
+    position: fixed;
+    z-index: 1400;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-size: 18pt;
+}
+.btn-shadow{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 90px;
+    font-size: 14pt;
+    /* box-shadow: (right left) (up down) (density) (length) (color); */
+    box-shadow: 2px 1px 5px 3px rgb(0 0 0/0.15);
+}

@@ -1,0 +1,61 @@
+body{
+    background-color: whitesmoke;
+}
+
+.header{
+    background-color: white;
+    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 0.15);
+    position: fixed;
+    top: 0; right: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.title{
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    right: 5px;
+    margin-bottom: 0;
+}
+
+.searchInput{
+    border-radius: 45px;
+    padding: 5px 10px;
+    font-size: 14pt;
+    font-style: italic;
+    position: absolute;
+    left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.searchBtn{
+    position: absolute;
+    left: 25px;
+    margin-top: 15px;
+}
+
+.product{
+    margin-top: 150px;
+    width: 20%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 0.1);
+}
+.productImg{
+    width: 100%;
+}
+.productInfo{
+    position: relative;
+    padding: 2px;
+}
+.selloff{
+    width: 40px;height: 40px;
+    font-size: 16pt;
+    position: absolute;
+    top: -25px; left: 25px;
+    background-color: orange;
+    border-radius: 90px;
+    color: white; padding: 5px;
+}
